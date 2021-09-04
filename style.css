@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.navbar-brand{
+    font-family:"Dancing Script" ;
+    font-weight: bolder;
+    font-size: 30px;
+    background-image: linear-gradient(to right top, #008793, #00bf72, #a8eb12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section.hero{
+    background-image: linear-gradient(to right top, #008793, #00bf72);
+    overflow: hidden;
+}
+
+
+
+.hero-image{
+    width: 30%;
+}
+
+.form-control{
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #13c703;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #13c703;
+  }
+
+  /* Link */
+
+  #genLink{
+      border: 3px solid greenyellow;
+      padding: 10px;
+      border-radius: 5px;
+      word-wrap: break-word;
+  }
+
+  /* whatsbtn */
+  .wbtn{
+      display: none;
+  }
+
+  .wbtn.show{
+      display: block;
+  }
+
+  /* Text on phone */
+  .magic-num{
+margin-top: 0px;
+padding: 50px;
+color: white;
+  }
+
+  .magic-text{
+    margin-bottom: 0px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+    color: black;
+      }
