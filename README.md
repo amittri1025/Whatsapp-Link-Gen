@@ -2,6 +2,8 @@
 
 I made this discord clone for amusement and practicing my CSS skills
 
+![My wassup link generator](./wassupintro.gif)
+
 ## Features 🌟
 
 1. Send Messages directly to people without saving their number
