@@ -1,6 +1,6 @@
 # ▶ Whatsapp Link Gen by Amit 
 
-I made this Whatsapp Link to practice my CSS skills & Bootstrap skills
+I made this Whatsapp Link Generator to practice my CSS skills & Bootstrap skills
 
 ![My wassup link generator](./wassupintro.gif)
 
