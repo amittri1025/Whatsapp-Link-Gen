@@ -1,6 +1,6 @@
 # ▶ Whatsapp Link Gen by Amit 
 
-I made this discord clone for amusement and practicing my CSS skills
+I made this Whatsapp Link to practice my CSS skills & Bootstrap skills
 
 ![My wassup link generator](./wassupintro.gif)
 
