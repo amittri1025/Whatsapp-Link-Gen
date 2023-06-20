@@ -2,7 +2,7 @@
 
 I made this Whatsapp Link Generator to practice my CSS skills & Bootstrap skills
 
-![My wassup link generator](./wassupintro.gif)
+![My wassup link generator](./images/whatsappscreen.gif)
 
 ## Features 🌟
 
