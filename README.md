@@ -1,6 +1,6 @@
 # ▶ Whatsapp Link Gen by Amit 
 
-I made this Whatsapp Link Generator to practice my CSS skills & Bootstrap skills
+A Web App to directly message People without every saving their saving their phone number.
 
 ![My wassup link generator](./images/whatsappscreen.gif)
 
