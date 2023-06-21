@@ -2,6 +2,9 @@
 
 A Web App to directly message People without every saving their saving their phone number.
 
+## Visit the WebApp
+https://amittri1025.github.io/Whatsapp-Link-Gen/
+
 ![My wassup link generator](./images/whatsappscreen.gif)
 
 ## Languages Used
