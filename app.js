@@ -41,9 +41,10 @@ mob.addEventListener('input', (e) => {
 
     const value = e.target.value;
 
+    if(e.inputType === 'deleteContentBackward') return;
+
     // can input only digits
     if(!parseInt(e.data)) {
-        console.log(value.length);
         mob.value = value.substring(0, value.length-1);
     }
 })
