@@ -64,11 +64,13 @@
   <section class="p-sm-5 py-5">
     <div class="container w-75">
       <div class="d-sm-flex justify-content-between align-items-center">
-        <form>
+        <form class="needs-validation">
           <h2 class="pb-2">Enter Details 🚀</h2>
           <div class="mb-3">
             <label for="MobileNum" class="form-label">Enter Mobile Number</label>
             <input required type="text" class="form-control" id="MobileNum" aria-describedby="emailHelp">
+            <div class="err-msg">Cannot be blank
+            </div>
             <div id="emailHelp" class="form-text">Don't worry we never store anyone's mobile number</div>
           </div>
           <div class="mb-3">
@@ -130,7 +132,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
 integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+<script src="app.js"></script>
   
 </body>
 

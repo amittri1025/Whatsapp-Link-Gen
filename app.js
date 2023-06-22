@@ -6,6 +6,7 @@ const genLink = document.getElementById('genLink')
 const btnCopy = document.getElementById('btn-copy')
 const whatsBtn = document.getElementById('btn-WhatsLink')
 const linkContainer = document.getElementById('linkContainer')
+const errMsg = document.querySelector('.err-msg')
 
 // Magic (text on phone)
 let numPhone = document.getElementById('magic-num')
@@ -34,10 +35,30 @@ let linkText = arrayOfStrings.join('%20')
 let linkform = `I dont care`
 
 
+mob.addEventListener('input', (e) => {
+    mob.classList.remove('input-error');
+    errMsg.style.display = 'none';
 
+    const value = e.target.value;
+
+    if(e.inputType === 'deleteContentBackward') return;
+
+    // can input only digits
+    if(!parseInt(e.data)) {
+        mob.value = value.substring(0, value.length-1);
+    }
+})
 
 btn.addEventListener('click', (e) => {
     e.preventDefault()
+
+    // if mobilenum is empty then don't submit
+    if(!mob.value) {
+        mob.classList.add('input-error');
+        errMsg.style.display = 'block';
+        return;
+    }
+
     arrayOfStrings = inputText.value.split(' ')
     linkText = arrayOfStrings.join('%20')
     linkform = `https://api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`
