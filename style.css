@@ -14,6 +14,17 @@ section.hero{
     overflow: hidden;
 }
 
+input.input-error {
+    border:1px solid red !important;
+    box-shadow: 0 0 3px 0 rgba(220, 43, 43, 0.718);
+}
+
+.err-msg {
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+
 
 
 .hero-image{
