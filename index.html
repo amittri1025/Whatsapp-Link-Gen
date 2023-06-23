@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Best website to generate whatsapp links</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">WaLinkGen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign-up</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-success hero text-light p-5 text-center text-sm-start d-flex justify-content-center">
+    <div class="container w-75 offset-* position-relative">
+      <div class="d-flex align-items-center justify-content-between  overflow-hidden">
+        <div>
+          <h1 class="fw-normal">Create <span class="text-warning "></br>Whatsapp Links</span></h1>
+          <p class="lead my-4 fw-normal">Best Website to create Whatsapp Links</p>
+          <p class="lead my-4 fw-normal">Skip the hassle of saving the number <br> Message directly through our website. We're just a click away!</p>
+          <button class="btn btn-light btn-lg" id="rockBtn">Let's Rock</button>
+        </div>
+        <img class="img-fluid hero-image d-none d-sm-block pt-3 position-absolute end-0 top-0 w-50" src="images/phone.svg"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+<!-- Main body starts -->
+  <section class="p-sm-5 py-5">
+    <div class="container w-75">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <form class="needs-validation">
+          <h2 class="pb-2">Enter Details 🚀</h2>
+          <div class="mb-3">
+            <label for="MobileNum" class="form-label">Enter Mobile Number</label>
+            <input required type="text" class="form-control" id="MobileNum" aria-describedby="emailHelp">
+            <div class="err-msg">Cannot be blank
+            </div>
+            <div id="emailHelp" class="form-text">Don't worry we never store anyone's mobile number</div>
+          </div>
+          <div class="mb-3">
+            <label for="textforWa" class="form-label">Text to Send</label>
+            <input required type="text" class="form-control" id="textforWa">
+          </div>
+          <button type="submit" class="btn btn-success" id="mybtn">Generate Link</button>
+        </form>
+        <!-- <div class="position-relative">
+          <img src="./whatsraj.png" alt="" class="img-fluid w-75 d-none d-md-block">
+
+         <h3 class="magic-num position-absolute top-0" id="magic-num">Mobile Number</h3>
+          <h4 class="magic-text position-absolute bottom-0" id="magic-text">Text To Send</h4>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="container w-75 pt-5">
+      <div class="d-sm-flex"></div>
+  
+      <div class="text-center" id="linkContainer">
+        <h4 id="genLink">Link will be Generated here !!</h4>
+
+        <button href="#" class="btn btn-dark" id="btn-copy" data-clipboard-target="#genLink">Copy</button>
+
+        <a class="btn btn-success my-2 wbtn" id="btn-WhatsLink"><i class="bi bi-whatsapp"></i> Open in Whatsapp</a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <div class="footer text-center bg-dark text-white p-5 pb-2">
+
+    <p class="fw-normal">Visit Our Website Regularly for best Web Apps</p>
+    <div class="d-flex align-items-center justify-content-center">
+      <a href="#" class="btn btn-light mx-2">About Us</a>
+      <a href="#" class="btn btn-light mx-2">Contact Us</a>
+    </div>
+
+    <div class="p-4">
+      <a href="https://twitter.com/tdevamit" class="text-white my-5 mx-2 h3"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/amit-tripathi-607240202/" class="text-white my-5 mx-2 h3"><i class="bi bi-linkedin"></i></a>
+	<a href="https://github.com/amittri1025/Whatsapp-Link-Gen" class="text-white my-5 mx-2 h3"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+
+  <div class="container-fluid p-3 text-white text-center" style="background-color: rgb(29, 29, 29);">
+    <h6>COPYRIGHT@AMITTRIPATHI2021</h6>
+  </div>
+
+
+
+<script src="./scripts/clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+crossorigin="anonymous"></script>
+<script src="app.js"></script>
+  
+</body>
+
+</html>
