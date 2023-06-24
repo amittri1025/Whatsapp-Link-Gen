@@ -1,6 +1,6 @@
 # ▶ Whatsapp Link Gen by Amit 
 
-A Web App to directly message People without every saving their saving their phone number.
+A Web App to directly message People without ever saving their phone number.
 
 ## Visit the WebApp
 https://amittri1025.github.io/Whatsapp-Link-Gen/
