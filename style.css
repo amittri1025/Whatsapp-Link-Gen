@@ -25,7 +25,10 @@ input.input-error {
     display: none;
 }
 
-
+.mob-code {
+    display: flex;
+    gap: 4px;
+}
 
 .hero-image{
     width: 30%;
