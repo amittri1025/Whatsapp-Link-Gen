@@ -89,5 +89,7 @@ Note that these commands assume you're using HTTPS to clone and push to the repo
 [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:https://github.com/amittri1025)
 [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/amitt.zz/)
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)# ▶ Whatsapp Link Gen by Amit 
+📝 License
+The project is licensed under the <a href = "https://choosealicense.com/licenses/mit/" > MIT </a> License.
+
+▶ Whatsapp Link Gen by Amit 
