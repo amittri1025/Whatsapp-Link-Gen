@@ -1,6 +1,20 @@
-▶ Whatsapp Link Gen by Amit
+<h1>▶ Whatsapp Link Gen by Amit</h1>
 
 Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
+
+<h2>📚 Table of Contents</h2>
+
+👋 Introduction
+
+🐺 Usage
+
+🧰 Tech Stack Used
+
+🤝 Contributing
+
+📝 License
+
+🧑‍🤝‍🧑 Contributors
 
 <h2>👋 Introduction</h2>
 
@@ -89,7 +103,8 @@ Note that these commands assume you're using HTTPS to clone and push to the repo
 [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:https://github.com/amittri1025)
 [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/amitt.zz/)
 
-📝 License
+<h2>📝 License</h2>
+
 The project is licensed under the <a href = "https://choosealicense.com/licenses/mit/" > MIT </a> License.
 
 ▶ Whatsapp Link Gen by Amit 
