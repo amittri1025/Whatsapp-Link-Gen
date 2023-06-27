@@ -8,6 +8,8 @@ const whatsBtn = document.getElementById('btn-WhatsLink')
 const linkContainer = document.getElementById('linkContainer')
 const errMsg = document.querySelector('.err-msg')
 
+const countryCode = document.querySelector('select')
+
 // Magic (text on phone)
 let numPhone = document.getElementById('magic-num')
 let textPhone = document.getElementById('magic-text')
@@ -63,7 +65,7 @@ btn.addEventListener('click', (e) => {
 
     arrayOfStrings = inputText.value.split(' ')
     linkText = arrayOfStrings.join('%20')
-    linkform = `https://api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`
+    linkform = `https://api.whatsapp.com/send?phone=${countryCode.value}${mob.value}&text=${linkText}&lang=en`
 
     const whatsShareLink = `api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`
 
