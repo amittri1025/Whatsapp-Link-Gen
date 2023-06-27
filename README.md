@@ -1,22 +1,28 @@
-🎯 Whatsapp Link Gen
+<h1>🎯 Whatsapp Link Gen</h1>
+
 Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
 
-
-👋 Introduction
+<h3>👋 Introduction</h3>
 
 The WhatsApp Link Generator is a web-based application that allows users to send messages through WhatsApp without the need to provide their phone number. This README file provides an overview of the application, its features, and instructions for installation and usage.
 
-## Visit the WebApp
+<h3>## Visit the WebApp</h3>
 https://amittri1025.github.io/Whatsapp-Link-Gen/
 
+<h3>##🌐 About The Project</h3>
+![My wassup link generator](./images/whatsappscreen.gif)
 
-## Languages Used
+<h3>🧰 Tech Stack Used</h3>
+
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 ![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## Features 🌟
+<h3>🌟 Features </h3>
 
 1. Send Messages directly to people without saving their number
 1. The Link is created using whatsapp api.
@@ -25,10 +31,10 @@ https://amittri1025.github.io/Whatsapp-Link-Gen/
     const whatsShareLink = `api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`
 ```
 
-## Usage 🐺
+<h3>🐺 Usage</h3> 
 You are free to modify it whatever way you want. Just clone and enjoy 🚀
 
-## Contributing 🤝🏼
+<h3>🤝🏼 Contributing</h3> 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
