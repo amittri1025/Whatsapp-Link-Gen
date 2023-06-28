@@ -3,20 +3,6 @@
 <div id="top"></div>
 Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
 
-<div align="center">
-  <br>
-  <img src="https://img.shields.io/github/repo-size/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues-closed-raw/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <br>
-  <img src="https://img.shields.io/github/forks/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues-pr/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues-pr-closed-raw/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <br>
-  <img src="https://img.shields.io/github/stars/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <img src="https://img.shields.io/github/last-commit/Fenrir-04/Algo-Media?style=for-the-badge" />
-  <img src="https://img.shields.io/github/commit-activity/y/Fenrir-04/Algo-Media?style=for-the-badge" />
-</div>
 
 ## 📚 Table of Contents
 
