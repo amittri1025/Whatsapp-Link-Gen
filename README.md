@@ -3,18 +3,12 @@
 Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
 
 <h2>📚 Table of Contents</h2>
+- [👋 Introduction](#-introduction)
+- [🚀 Usage](#-usage)
+- [🧰 Tech Stack Used](#-tech-stack-used)
+- [🤝 Contributing](#-contributing)
+- [📝 License](#-license)
 
-👋 Introduction
-
-🐺 Usage
-
-🧰 Tech Stack Used
-
-🤝 Contributing
-
-📝 License
-
-🧑‍🤝‍🧑 Contributors
 
 <h2>👋 Introduction</h2>
 
