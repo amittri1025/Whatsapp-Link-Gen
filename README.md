@@ -1,8 +1,7 @@
-🎯 **Algo-Media**
+▶ **Whatsapp Link Gen**
 
 <div id="top"></div>
-
-Welcome to Algo-Media! 🎉 Algo-Media is a React-based video streaming application that allows users to watch YouTube videos. It utilizes the YouTube v3 API provided by RapidAPI to fetch and display videos.
+Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
 
 <div align="center">
   <br>
@@ -19,10 +18,6 @@ Welcome to Algo-Media! 🎉 Algo-Media is a React-based video streaming applicat
   <img src="https://img.shields.io/github/commit-activity/y/Fenrir-04/Algo-Media?style=for-the-badge" />
 </div>
 
-# Algo-Media
-
-Algo-Media is a React-based video streaming application inspired by platforms like YouTube. It allows users to watch YouTube videos directly within the application. This repository serves as the codebase for the Algo-Media project, and it utilizes the YouTube v3 API.
-
 ## 📚 Table of Contents
 
 - [👋 Introduction](#-introduction)
@@ -36,20 +31,17 @@ Algo-Media is a React-based video streaming application inspired by platforms li
 
 ## 👋 Introduction
 
-The Algo-Media application leverages the powerful YouTube v3 API, which enables the retrieval of video data such as titles, descriptions, channel information, and more. By utilizing the API, the application seamlessly integrates with the YouTube API to provide users with an immersive video streaming experience.
-
-##👋 Introduction
-
 The WhatsApp Link Generator is a web-based application that allows users to send messages through WhatsApp without the need to provide their phone number. This README file provides an overview of the application, its features, and instructions for installation and usage.
 
-##Visit the WebApp
+
+## Visit the WebApp
 https://amittri1025.github.io/Whatsapp-Link-Gen/
 
-##🌐 About The Project
+## 🌐 About The Project
 
 ![My wassup link generator](./images/whatsappscreen.gif)
 
-##🧰 Tech Stack Used
+## 🧰 Tech Stack Used
 
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
@@ -59,7 +51,7 @@ https://amittri1025.github.io/Whatsapp-Link-Gen/
 
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-##🌟 Features 
+## 🌟 Features 
 
 1. Send Messages directly to people without saving their number
 1. The Link is created using whatsapp api.
@@ -68,10 +60,10 @@ https://amittri1025.github.io/Whatsapp-Link-Gen/
     const whatsShareLink = `api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`
 ```
 
-##🐺 Usage 
+## 🐺 Usage 
 You are free to modify it whatever way you want. Just clone and enjoy 🚀
 
-##🤝🏼 Contributing 
+## 🤝🏼 Contributing 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
@@ -126,7 +118,7 @@ Note that these commands assume you're using HTTPS to clone and push to the repo
 [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:https://github.com/amittri1025)
 [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/amitt.zz/)
 
-##📝 License##
+## 📝 License
 
 The project is licensed under the <a href = "https://choosealicense.com/licenses/mit/" > MIT </a> License.
 
