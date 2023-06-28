@@ -22,9 +22,9 @@ Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without
 
 - [👋 Introduction](#-introduction)
 - [🧰 Tech Stack Used](#-tech-stack-used)
--  [🚀 Usage](#-usage)
+- [🚀 Usage](#-usage)
 - [🤝 Contributing](#-contributing)
-- [📱Contact](#-contact-me)
+- [📱 Contact Me](#-contact-me)
 - [📝 License](#-license)
 
 ## 👋 Introduction
