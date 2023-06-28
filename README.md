@@ -24,7 +24,7 @@ Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without
 - [🧰 Tech Stack Used](#-tech-stack-used)
 -  [🚀 Usage](#-usage)
 - [🤝 Contributing](#-contributing)
-- [📱Contact](#-contactMe)
+- [📱Contact](#-contact-me)
 - [📝 License](#-license)
 
 ## 👋 Introduction
