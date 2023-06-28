@@ -6,10 +6,10 @@ Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without
 <div align="center">
  <br>
     
-[![Contributors](https://img.shields.io/github/contributors/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/graphs/contributors) <spacer>
-[![Forks](https://img.shields.io/github/forks/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/network/members)<spacer>
-[![Stargazers](https://img.shields.io/github/stars/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/stargazers)
-[![Open Issues](https://img.shields.io/github/issues/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/issues)
+[![Contributors](https://img.shields.io/github/contributors/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/graphs/contributors) <spacer>
+[![Forks](https://img.shields.io/github/forks/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/network/members)<spacer>
+[![Stargazers](https://img.shields.io/github/stars/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/stargazers)
+[![Open Issues](https://img.shields.io/github/issues/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/issues)
 
 </div>
 
