@@ -1,19 +1,42 @@
-<h1>▶ Whatsapp Link Gen by Amit</h1>
+🎯 **Algo-Media**
 
-Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
+<div id="top"></div>
 
-<h2>📚 Table of Contents</h2>
+Welcome to Algo-Media! 🎉 Algo-Media is a React-based video streaming application that allows users to watch YouTube videos. It utilizes the YouTube v3 API provided by RapidAPI to fetch and display videos.
+
+<div align="center">
+  <br>
+  <img src="https://img.shields.io/github/repo-size/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <br>
+  <img src="https://img.shields.io/github/forks/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <br>
+  <img src="https://img.shields.io/github/stars/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/Fenrir-04/Algo-Media?style=for-the-badge" />
+  <img src="https://img.shields.io/github/commit-activity/y/Fenrir-04/Algo-Media?style=for-the-badge" />
+</div>
+
+# Algo-Media
+
+Algo-Media is a React-based video streaming application inspired by platforms like YouTube. It allows users to watch YouTube videos directly within the application. This repository serves as the codebase for the Algo-Media project, and it utilizes the YouTube v3 API.
+
+## 📚 Table of Contents
 
 - [👋 Introduction](#-introduction)
-
+- [⚙️ Installation](#️-installation)
 - [🚀 Usage](#-usage)
- 
 - [🧰 Tech Stack Used](#-tech-stack-used)
-  
+- [👨‍💻 Mentors and Project Admin](#-mentors-and-project-admin)
 - [🤝 Contributing](#-contributing)
-  
 - [📝 License](#-license)
+- [🧑‍🤝‍🧑 Contributors](#contributors)
 
+## 👋 Introduction
+
+The Algo-Media application leverages the powerful YouTube v3 API, which enables the retrieval of video data such as titles, descriptions, channel information, and more. By utilizing the API, the application seamlessly integrates with the YouTube API to provide users with an immersive video streaming experience.
 
 ##👋 Introduction
 
