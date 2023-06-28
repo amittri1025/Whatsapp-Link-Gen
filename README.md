@@ -1,4 +1,4 @@
-▶ *Whatsapp Link Gen*
+▶ #Whatsapp Link Gen*
 
 <div id="top"></div>
 Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
@@ -31,7 +31,7 @@ Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without
 The WhatsApp Link Generator is a web-based application that allows users to send messages through WhatsApp without the need to provide their phone number. This README file provides an overview of the application, its features, and instructions for installation and usage.
 
 
-# Visit the WebApp
+### Visit the WebApp
 https://amittri1025.github.io/Whatsapp-Link-Gen/
 
 ## 🌐 About The Project
