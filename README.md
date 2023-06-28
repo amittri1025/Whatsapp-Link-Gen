@@ -3,7 +3,17 @@
 <div id="top"></div>
 Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
 
+
 [![Contributors](https://img.shields.io/github/contributors/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/graphs/contributors)
+
+[![Forks](https://img.shields.io/github/forks/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/network/members)
+
+[![Stargazers](https://img.shields.io/github/stars/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/stargazers)
+
+[![Open Issues](https://img.shields.io/github/issues/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/mounika7204/Whatsapp-Link-Gen/issues)
+
+[![License](https://img.shields.io/github/license/mounika7204/Whatsapp-Link-Gen?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
 
 
 ## 📚 Table of Contents
