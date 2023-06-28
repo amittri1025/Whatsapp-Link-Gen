@@ -1,4 +1,4 @@
-▶ # Whatsapp Link Gen
+# ▶ Whatsapp Link Gen
 
 <div id="top"></div>
 Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
@@ -108,7 +108,7 @@ After pushing your changes, you can visit the original repository's page on GitH
 
 Note that these commands assume you're using HTTPS to clone and push to the repository. If you have set up SSH keys, you can use the SSH URL instead for cloning and pushing.
 
-## 📱Contact Me
+## 📱 Contact Me
 [![linked-in](https://img.shields.io/badge/Linked_In-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/tripathiamit10/)
 [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:https://github.com/amittri1025)
 [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/amitt.zz/)
