@@ -14,12 +14,12 @@ const countryCode = document.querySelector('select')
 let numPhone = document.getElementById('magic-num')
 let textPhone = document.getElementById('magic-text')
 
-inputText.addEventListener('keyup', (e)=>{
-    textPhone.innerText = e.target.value 
+inputText.addEventListener('keyup', (e) => {
+    textPhone.innerText = e.target.value
 })
 
-mob.addEventListener('keyup', (e)=>{
-    numPhone.innerText = e.target.value 
+mob.addEventListener('keyup', (e) => {
+    numPhone.innerText = e.target.value
 })
 
 const textStr = inputText.value
@@ -43,13 +43,13 @@ mob.addEventListener('input', (e) => {
 
     const value = e.target.value;
 
-    if(e.inputType === 'deleteContentBackward') return;
+    if (e.inputType === 'deleteContentBackward') return;
 
     // can input only digits
-    
-    if(parseInt(e.data)!==0 && !parseInt(e.data)) {
+
+    if (parseInt(e.data) !== 0 && !parseInt(e.data)) {
         console.log(e.data)
-        mob.value = value.substring(0, value.length-1);
+        mob.value = value.substring(0, value.length - 1);
     }
 })
 
@@ -57,7 +57,7 @@ btn.addEventListener('click', (e) => {
     e.preventDefault()
 
     // if mobilenum is empty then don't submit
-    if(!mob.value) {
+    if (!mob.value) {
         mob.classList.add('input-error');
         errMsg.style.display = 'block';
         return;
@@ -109,3 +109,14 @@ btnCopy.addEventListener('click', (e) => {
     }, 2000);
 
 })
+
+new EmojiPicker({
+    trigger: [
+        {
+            selector: '.emoji-btn',
+            insertInto: ['.one']
+        }
+    ],
+    closeButton: true,
+    //specialButtons: green
+});
