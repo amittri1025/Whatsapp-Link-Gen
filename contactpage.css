@@ -1,0 +1,46 @@
+body{
+    background-image: url("images/background-contact-us.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+        
+}
+
+h2{
+    font-size: 60px;
+}
+
+.flex{
+    display: flex;
+    height: 30vh;
+    width: 768px;
+    margin-left: 360px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+img{
+    border-radius: 6px;
+}
+.flex > div:hover{
+    border: 2px  black;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.flex div{
+    background-color: white;
+    border-radius: 5px;
+}
