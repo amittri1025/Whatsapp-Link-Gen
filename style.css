@@ -76,16 +76,16 @@ color: white;
     color: black;
       }
 .to-top{
-    background: rgb(0, 170, 248);
+    
     position: fix;
     bottom: 16px;
     right:32px;
-    width:50px;
+    width: 50px;
     height:50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     font-size:32px;
     color:#ffffff;
     text-decoration: none;
@@ -93,15 +93,10 @@ color: white;
 .back-to-top {
     position : absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-left: 95%;
   }
 
-.back-top{
-    display: block;
-    margin-top: 10px;
-    color: rgb(0, 170, 248);
-    font-size: 15px;
-    font-weight: bold;
-}
+
