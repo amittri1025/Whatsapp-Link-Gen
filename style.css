@@ -76,8 +76,8 @@ color: white;
     color: black;
       }
 .to-top{
-    background: rgb(0, 170, 248);
-    position: fix;
+    background: rgb(72, 218, 53);
+    position: fixed;
     bottom: 16px;
     right:32px;
     width:50px;
@@ -97,11 +97,3 @@ color: white;
     justify-content: center;
     align-items: center;
   }
-
-.back-top{
-    display: block;
-    margin-top: 10px;
-    color: rgb(0, 170, 248);
-    font-size: 15px;
-    font-weight: bold;
-}
