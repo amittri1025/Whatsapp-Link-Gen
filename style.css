@@ -93,9 +93,9 @@ color: white;
 .back-to-top {
     position : absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: 275px;
+    justify-content: flex-end;
     margin-left: 95%;
   }
 
