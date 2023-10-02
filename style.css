@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+
 .navbar-brand{
     font-family:"Dancing Script" ;
     font-weight: bolder;
@@ -76,8 +77,9 @@ color: white;
     color: black;
       }
 .to-top{
-    
-    position: fix;
+
+    background: rgb(72, 218, 53);
+    position: fixed;
     bottom: 16px;
     right:32px;
     width: 50px;
@@ -101,3 +103,15 @@ color: white;
   }
 
 
+
+/* Default (Light) Mode */
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}

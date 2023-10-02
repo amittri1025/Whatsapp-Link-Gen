@@ -10,6 +10,14 @@ const errMsg = document.querySelector('.err-msg')
 
 const countryCode = document.querySelector('select')
 
+// dark mode
+const toggleButton = document.getElementById('toggleMode');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+
 // Magic (text on phone)
 let numPhone = document.getElementById('magic-num')
 let textPhone = document.getElementById('magic-text')
