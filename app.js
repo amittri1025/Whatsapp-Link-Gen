@@ -10,13 +10,33 @@ const errMsg = document.querySelector('.err-msg')
 
 const countryCode = document.querySelector('select')
 
+
+
 // dark mode
 const toggleButton = document.getElementById('toggleMode');
 const body = document.body;
+const colorMode = localStorage.getItem('color-mode') || 'light';
 
-toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-});
+if(localStorage.getItem('color-mode') === 'dark'){
+    body.classList.add('dark-mode');
+}
+
+function toggleColorMode(){
+ let colorMode = localStorage.getItem('color-mode')
+
+    if (colorMode !== 'dark' || colorMode === null) {
+    body.classList.add('dark-mode');
+    localStorage.setItem('color-mode', 'dark');
+  }  else {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('color-mode', 'light');
+  }
+}
+
+
+toggleButton.addEventListener('click', toggleColorMode);
+
+
 
 // Magic (text on phone)
 let numPhone = document.getElementById('magic-num')
