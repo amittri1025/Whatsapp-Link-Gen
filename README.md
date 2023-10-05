@@ -1,18 +1,17 @@
-# ▶ Whatsapp Link Gen
-
-<div id="top"></div>
-Welcome to Whatsapp Link Gen ! 🎉 A Web App to directly message People without ever saving their phone number.
-
 <div align="center">
- <br>
-    
+ 
 [![Contributors](https://img.shields.io/github/contributors/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/graphs/contributors) 
 [![Forks](https://img.shields.io/github/forks/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/network/members)
 [![Stargazers](https://img.shields.io/github/stars/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/stargazers)
 [![Open Issues](https://img.shields.io/github/issues/amittri1025/Whatsapp-Link-Gen?style=for-the-badge)](https://github.com/amittri1025/Whatsapp-Link-Gen/issues)
-
 </div>
-
+<!-- WaLinkGen  -->
+<div align="center">
+    <img src="./images/logo.png" width="500px">
+    <p font-weight="900">Welcome to <b>Whatsapp Link Gen</b> ! 🎉 A Web App to directly message People without ever saving their phone number.
+    </p>
+</div>
+<hr/>
 
 ## 📚 Table of Contents
 
