@@ -22,7 +22,6 @@
     <a href="https://github.com/amittri1025/Whatsapp-Link-Gen/issues">Work on an issue</a>
     <br/>
     <br/>
-    <img src="./images/webpage_ss.png">
   </p>
 </div>
 
