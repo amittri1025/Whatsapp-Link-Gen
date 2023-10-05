@@ -4,6 +4,22 @@ body{
     position: relative;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+  height: 12px;
+  }
+  
+  
+  
+  ::-webkit-scrollbar-thumb {
+  background: rgb(178, 180, 174);  
+  border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #6e6f6d;  
+  }
+
 .navbar-brand {
   font-family: "Dancing Script";
   font-weight: bolder;
