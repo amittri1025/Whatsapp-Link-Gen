@@ -26,6 +26,7 @@ body{
   font-size: 30px;
   background-image: linear-gradient(to right top, #008793, #00bf72, #a8eb12);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
