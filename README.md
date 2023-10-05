@@ -11,11 +11,10 @@
 
 
 <div align="center">
-    <img src="./images/logo.png" width="500px">
+    <img src="https://i.imgur.com/irp03OP.png" alt="logo_here" width="500px">
     <p>Welcome to <b>Whatsapp Link Gen</b> ! 🎉 A Web App to directly message People without ever saving their phone number.
     </p>
     <p>
-    <br />
     <a href="https://amittri1025.github.io/Whatsapp-Link-Gen/">Visit the website</a>
     ·
     <a href="https://github.com/amittri1025/Whatsapp-Link-Gen/issues/new">Make an issue</a>
@@ -162,6 +161,11 @@ After pushing your changes, you can visit the original repository's page on GitH
 *Note that these commands assume you're using HTTPS to clone and push to the repository. If you have set up SSH keys, you can use the SSH URL instead for cloning and pushing.*
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
+
+<p align="center">
+<img src="https://i.imgur.com/FMMW1dH.png">
+</p>
+
 <hr/>
 
 # 🏆 Contributors
