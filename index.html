@@ -338,12 +338,25 @@
   </section>
 
   <!-- Added Button to go to top of page -->
-  <div class="back-to-top">
-    <a href="#" class="to-top">
+  <div id="back-to-top">
       <i class="fa-solid fa-chevron-up"></i>
-    </a>
-
   </div>
+
+  <script>
+    const b2t = document.getElementById('back-to-top');
+    b2t.addEventListener('click', ()=>{
+      window.scrollTo(0, 0);
+    })
+
+    window.addEventListener('scroll', ()=>{
+      if(window.scrollY > 300){
+        b2t.classList.add('show');
+      }else{
+        b2t.classList.remove('show');
+      }
+    })
+   
+  </script>
 
   <div class="footer text-center bg-dark text-white p-5 pb-2">
 
