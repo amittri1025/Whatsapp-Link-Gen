@@ -77,10 +77,10 @@
         <form class="needs-validation">
           <h2 class="pb-2">Enter Details 🚀</h2>
 
-          <div class="mb-3">
-            <label for="MobileNum" class="form-label">Enter Mobile Number</label>
+          <label for="MobileNum" class="form-label">Enter Mobile Number</label>
+          <div class="mb-3 mob-container">
             <div class="mob-code">
-              <select name="countryCode" id="" class="form-select">
+              <select name="countryCode" id="select" class="form-select">
 
                 <option data-countryCode="IN" value="91" selected>India (+91)</option>
                 <optgroup label="Other countries">
@@ -301,12 +301,17 @@
                   <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                 </optgroup>
               </select>
+            </div>
+            <div class="mob-num">
               <input required type="text" class="form-control" id="MobileNum" aria-describedby="emailHelp">
             </div>
-            <div class="err-msg">Cannot be blank
-            </div>
-            <div id="emailHelp" class="form-text">Don't worry we never store anyone's mobile number</div>
           </div>
+          <div class="err-msg">Cannot be blank
+          </div>
+          <div id="emailHelp" class="form-text">
+            Don't worry we never store anyone's mobile number
+          </div>
+        
           <div class="d-flex mb-3">
             <div>
               <label for="textforWa" class="form-label">Text to Send</label>
