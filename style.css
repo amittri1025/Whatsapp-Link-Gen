@@ -9,6 +9,9 @@ body{
   height: 12px;
   }
   
+  ::-webkit-scrollbar-track{
+    background-image: linear-gradient(to right top, #008793, #00bf72);
+  }
   
   
   ::-webkit-scrollbar-thumb {
