@@ -4,12 +4,32 @@ body{
     position: relative;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+  height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-image: linear-gradient(to right top, #008793, #00bf72);
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+  background: rgb(178, 180, 174);  
+  border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #6e6f6d;  
+  }
+
 .navbar-brand {
   font-family: "Dancing Script";
   font-weight: bolder;
   font-size: 30px;
   background-image: linear-gradient(to right top, #008793, #00bf72, #a8eb12);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
