@@ -55,7 +55,14 @@ rockBtn.addEventListener('click', () => {
     window.scrollTo(0, 400)
 });
 
+const select = document.getElementById('select')
 
+function adjustWidth(){
+    const selectedOption = select.options[select.selectedIndex];
+    select.style.width = `${selectedOption.text.length + 3}ch` ;
+}
+adjustWidth();
+select.addEventListener("change", adjustWidth);
 
 
 let arrayOfStrings = inputText.value.split(' ')

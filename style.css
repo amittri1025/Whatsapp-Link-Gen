@@ -48,10 +48,16 @@ input.input-error {
   font-size: 0.8rem;
   display: none;
 }
-
-.mob-code {
+.mob-container{
   display: flex;
   gap: 4px;
+}
+.mob-code {
+  display: flex;
+}
+
+.mob-num{
+  display: flex;
 }
 
 .hero-image {
