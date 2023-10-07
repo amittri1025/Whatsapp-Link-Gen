@@ -15,22 +15,20 @@ const countryCode = document.querySelector('select')
 // dark mode
 const toggleButton = document.getElementById('toggleMode');
 const body = document.body;
-const colorMode = localStorage.getItem('color-mode') || 'light';
+let colorMode = localStorage.getItem('color-mode') || 'light';
 
-if(localStorage.getItem('color-mode') === 'dark'){
-    body.classList.add('dark-mode');
-}
+toggleButton.textContent = colorMode === 'dark' ? 'Light': 'Dark'; 
+
+body.classList.toggle('dark-mode', colorMode == 'dark');
 
 function toggleColorMode(){
- let colorMode = localStorage.getItem('color-mode')
+    colorMode = colorMode === 'light' ? 'dark' : 'light';
 
-    if (colorMode !== 'dark' || colorMode === null) {
-    body.classList.add('dark-mode');
-    localStorage.setItem('color-mode', 'dark');
-  }  else {
-    body.classList.remove('dark-mode');
-    localStorage.setItem('color-mode', 'light');
-  }
+    toggleButton.textContent = colorMode === 'dark' ? 'Light': 'Dark'; 
+
+    body.classList.toggle('dark-mode', colorMode == 'dark');
+
+    localStorage.setItem('color-mode', colorMode);
 }
 
 
