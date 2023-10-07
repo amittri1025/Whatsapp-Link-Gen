@@ -17,10 +17,14 @@ const toggleButton = document.getElementById('toggleMode');
 const body = document.body;
 let colorMode = localStorage.getItem('color-mode') || 'light';
 
+toggleButton.textContent = colorMode === 'dark' ? 'Light': 'Dark'; 
+
 body.classList.toggle('dark-mode', colorMode == 'dark');
 
 function toggleColorMode(){
     colorMode = colorMode === 'light' ? 'dark' : 'light';
+
+    toggleButton.textContent = colorMode === 'dark' ? 'Light': 'Dark'; 
 
     body.classList.toggle('dark-mode', colorMode == 'dark');
 
