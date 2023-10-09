@@ -1,27 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-body{
-    position: relative;
+body {
+  position: relative;
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
   height: 12px;
-  }
-  
-  ::-webkit-scrollbar-track{
-    background-image: linear-gradient(to right top, #008793, #00bf72);
-  }
-  
-  
-  ::-webkit-scrollbar-thumb {
-  background: rgb(178, 180, 174);  
-  border-radius: 15px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-  background: #6e6f6d;  
-  }
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(to right top, #008793, #00bf72);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(208, 211, 202);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e6f6d;
+}
 
 .navbar-brand {
   font-family: "Dancing Script";
@@ -48,7 +47,7 @@ input.input-error {
   font-size: 0.8rem;
   display: none;
 }
-.mob-container{
+.mob-container {
   display: flex;
   gap: 4px;
 }
@@ -56,7 +55,7 @@ input.input-error {
   display: flex;
 }
 
-.mob-num{
+.mob-num {
   display: flex;
 }
 
@@ -106,28 +105,26 @@ input.input-error {
   color: black;
 }
 
-#back-to-top{
-    background-color: #13c703;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform .5s ;
-    transform: translateX(200px);
+#back-to-top {
+  background-color: #13c703;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform: translateX(200px);
 }
 
-#back-to-top.show{
-    transform: translateX(0px);
+#back-to-top.show {
+  transform: translateX(0px);
 }
-
-
 
 /* Default (Light) Mode */
 body.light-mode {
