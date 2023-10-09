@@ -11,6 +11,56 @@ const errMsg = document.querySelector('.err-msg')
 const countryCode = document.querySelector('select')
 
 
+// Function to detect context based on user input
+function detectContext(text) {
+    // Convert the input text to lowercase for case-insensitive matching
+    const lowercaseText = text.toLowerCase();
+
+    // Define keywords or patterns related to meetings
+    const meetingKeywords = ["meeting", "conference", "appointment"];
+
+    // Check if any of the meeting keywords are present in the text
+    for (const keyword of meetingKeywords) {
+        if (lowercaseText.includes(keyword)) {
+            return "meeting";
+        }
+    }
+
+    // Add more context detection rules as needed
+    return null;
+}
+
+// Event listener for text input
+inputText.addEventListener('keyup', (e) => {
+    const text = e.target.value;
+    const context = detectContext(text);
+
+    if (context === "meeting") {
+        // Generate and display context-specific suggestions for meetings
+        const meetingSuggestions = generateMeetingSuggestions();
+        displaySuggestions(meetingSuggestions);
+    } else {
+        // Clear suggestions if no relevant context is detected
+        clearSuggestions();
+    }
+});
+
+// Function to generate suggestions for the "meeting" context
+function generateMeetingSuggestions() {
+    const suggestions = [
+        "Schedule a meeting on WhatsApp",
+        "Share meeting location",
+        "Send a meeting agenda"
+    ];
+    return suggestions;
+}
+
+// Function to clear suggestions
+function clearSuggestions() {
+    // Clear the suggestions container
+    suggestionContainer.innerHTML = "";
+}
+
 
 // dark mode
 const toggleButton = document.getElementById('toggleMode');
