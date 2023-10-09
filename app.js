@@ -1,117 +1,114 @@
-const btn = document.getElementById('mybtn')
-const rockBtn = document.getElementById('rockBtn')
-const mob = document.getElementById('MobileNum')
-const inputText = document.getElementById('textforWa')
-const genLink = document.getElementById('genLink')
-const btnCopy = document.getElementById('btn-copy')
-const whatsBtn = document.getElementById('btn-WhatsLink')
-const linkContainer = document.getElementById('linkContainer')
-const errMsg = document.querySelector('.err-msg')
+const btn = document.getElementById("mybtn");
+const rockBtn = document.getElementById("rockBtn");
+const mob = document.getElementById("MobileNum");
+const inputText = document.getElementById("textforWa");
+const genLink = document.getElementById("genLink");
+const btnCopy = document.getElementById("btn-copy");
+const whatsBtn = document.getElementById("btn-WhatsLink");
+const linkContainer = document.getElementById("linkContainer");
+const errMsg = document.querySelector(".err-msg");
 
-const countryCode = document.querySelector('select')
-
-
+const countryCode = document.querySelector("select");
 
 // dark mode
-const toggleButton = document.getElementById('toggleMode');
+const toggleButton = document.getElementById("toggleMode");
 const body = document.body;
-let colorMode = localStorage.getItem('color-mode') || 'light';
+let colorMode = localStorage.getItem("color-mode") || "light";
 
-toggleButton.textContent = colorMode === 'dark' ? 'Light': 'Dark'; 
+toggleButton.innerHTML =
+  colorMode === "dark"
+    ? '<i class="fa-regular fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
 
-body.classList.toggle('dark-mode', colorMode == 'dark');
+body.classList.toggle("dark-mode", colorMode == "dark");
 
-function toggleColorMode(){
-    colorMode = colorMode === 'light' ? 'dark' : 'light';
+function toggleColorMode() {
+  colorMode = colorMode === "light" ? "dark" : "light";
 
-    toggleButton.textContent = colorMode === 'dark' ? 'Light': 'Dark'; 
+  toggleButton.innerHTML =
+    colorMode === "dark"
+      ? '<i class="fa-regular fa-sun"></i>'
+      : '<i class="fa-solid fa-moon"></i>';
 
-    body.classList.toggle('dark-mode', colorMode == 'dark');
+  body.classList.toggle("dark-mode", colorMode == "dark");
 
-    localStorage.setItem('color-mode', colorMode);
+  localStorage.setItem("color-mode", colorMode);
 }
 
-
-toggleButton.addEventListener('click', toggleColorMode);
-
-
+toggleButton.addEventListener("click", toggleColorMode);
 
 // Magic (text on phone)
-let numPhone = document.getElementById('magic-num')
-let textPhone = document.getElementById('magic-text')
+let numPhone = document.getElementById("magic-num");
+let textPhone = document.getElementById("magic-text");
 
-inputText.addEventListener('keyup', (e) => {
-    textPhone.innerText = e.target.value
-})
-
-mob.addEventListener('keyup', (e) => {
-    numPhone.innerText = e.target.value
-})
-
-const textStr = inputText.value
-
-// Rock Btn smooth scroll
-rockBtn.addEventListener('click', () => {
-    window.scrollTo(0, 400)
+inputText.addEventListener("keyup", (e) => {
+  textPhone.innerText = e.target.value;
 });
 
-const select = document.getElementById('select')
+mob.addEventListener("keyup", (e) => {
+  numPhone.innerText = e.target.value;
+});
 
-function adjustWidth(){
-    const selectedOption = select.options[select.selectedIndex];
-    select.style.width = `${selectedOption.text.length + 3}ch` ;
+const textStr = inputText.value;
+
+// Rock Btn smooth scroll
+rockBtn.addEventListener("click", () => {
+  window.scrollTo(0, 400);
+});
+
+const select = document.getElementById("select");
+
+function adjustWidth() {
+  const selectedOption = select.options[select.selectedIndex];
+  select.style.width = `${selectedOption.text.length + 3}ch`;
 }
 adjustWidth();
 select.addEventListener("change", adjustWidth);
 
+let arrayOfStrings = inputText.value.split(" ");
+let linkText = arrayOfStrings.join("%20");
+let linkform = `I dont care`;
 
-let arrayOfStrings = inputText.value.split(' ')
-let linkText = arrayOfStrings.join('%20')
-let linkform = `I dont care`
+mob.addEventListener("input", (e) => {
+  mob.classList.remove("input-error");
+  errMsg.style.display = "none";
 
+  const value = e.target.value;
 
-mob.addEventListener('input', (e) => {
-    mob.classList.remove('input-error');
-    errMsg.style.display = 'none';
+  if (e.inputType === "deleteContentBackward") return;
 
-    const value = e.target.value;
+  // can input only digits
 
-    if (e.inputType === 'deleteContentBackward') return;
+  if (parseInt(e.data) !== 0 && !parseInt(e.data)) {
+    console.log(e.data);
+    mob.value = value.substring(0, value.length - 1);
+  }
+});
 
-    // can input only digits
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
 
-    if (parseInt(e.data) !== 0 && !parseInt(e.data)) {
-        console.log(e.data)
-        mob.value = value.substring(0, value.length - 1);
-    }
-})
+  // if mobilenum is empty then don't submit
+  if (!mob.value) {
+    mob.classList.add("input-error");
+    errMsg.style.display = "block";
+    return;
+  }
 
-btn.addEventListener('click', (e) => {
-    e.preventDefault()
+  arrayOfStrings = inputText.value.split(" ");
+  linkText = arrayOfStrings.join("%20");
+  linkform = `https://api.whatsapp.com/send?phone=${countryCode.value}${mob.value}&text=${linkText}&lang=en`;
 
-    // if mobilenum is empty then don't submit
-    if (!mob.value) {
-        mob.classList.add('input-error');
-        errMsg.style.display = 'block';
-        return;
-    }
+  const whatsShareLink = `api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`;
 
-    arrayOfStrings = inputText.value.split(' ')
-    linkText = arrayOfStrings.join('%20')
-    linkform = `https://api.whatsapp.com/send?phone=${countryCode.value}${mob.value}&text=${linkText}&lang=en`
+  console.log(inputText.value);
+  genLink.innerText = linkform;
 
-    const whatsShareLink = `api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`
+  whatsBtn.setAttribute("href", `http://${whatsShareLink}/`);
+  whatsBtn.classList.remove("wbtn");
 
-    console.log(inputText.value)
-    genLink.innerText = linkform
-
-    whatsBtn.setAttribute("href", `http://${whatsShareLink}/`)
-    whatsBtn.classList.remove('wbtn')
-
-    window.scrollTo(0, 700)
-})
-
-
+  window.scrollTo(0, 700);
+});
 
 // Whatsapp share btn
 // Create anchor element.
@@ -132,24 +129,22 @@ btn.addEventListener('click', (e) => {
 
 // Copy Text
 
-new ClipboardJS('#btn-copy');
-btnCopy.addEventListener('click', (e) => {
-
-    e.preventDefault()
-    btnCopy.innerText = 'Copied'
-    setTimeout(() => {
-        btnCopy.innerText = 'Copy'
-    }, 2000);
-
-})
+new ClipboardJS("#btn-copy");
+btnCopy.addEventListener("click", (e) => {
+  e.preventDefault();
+  btnCopy.innerText = "Copied";
+  setTimeout(() => {
+    btnCopy.innerText = "Copy";
+  }, 2000);
+});
 
 new EmojiPicker({
-    trigger: [
-        {
-            selector: '.emoji-btn',
-            insertInto: ['.one']
-        }
-    ],
-    closeButton: true,
-    //specialButtons: green
+  trigger: [
+    {
+      selector: ".emoji-btn",
+      insertInto: [".one"],
+    },
+  ],
+  closeButton: true,
+  //specialButtons: green
 });
