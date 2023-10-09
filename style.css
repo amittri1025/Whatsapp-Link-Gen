@@ -82,6 +82,10 @@ input.input-error {
   word-wrap: break-word;
 }
 
+.btn:hover{
+  box-shadow: 0 10px 10px 0 rgba(101, 101, 101, 0.37);
+}
+
 /* whatsbtn */
 .wbtn {
   display: none;
