@@ -2,7 +2,6 @@
   margin: 0px;
   font-family: Arial;
   border: border-box;
-
 }
 
 body {
@@ -15,10 +14,7 @@ body {
 .navbar {
   width: 100%;
   background-color: #212529;
-
 }
-
-
 
 .navbar-brand {
   font-family: "Dancing Script";
@@ -44,7 +40,6 @@ a {
   text-decoration: none;
   font-size: 15px;
 }
-
 
 .hero {
   color: white;
@@ -75,17 +70,15 @@ a {
   width: 50%;
 }
 
-
 footer {
   padding: 10px;
   margin-top: auto;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 * {
   margin: 0;
@@ -117,7 +110,6 @@ html {
     font-size: 40px;
     font-family: sans-serif;
   }
-
 }
 
 .box:hover {
@@ -126,9 +118,7 @@ html {
 
 i {
   padding: 0px;
-
 }
-
 
 .box {
   display: flex;
@@ -137,4 +127,8 @@ i {
 
 .box p {
   font-size: 20px;
+}
+
+.white-space {
+  white-space: nowrap;
 }
