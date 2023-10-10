@@ -2,7 +2,6 @@
   margin: 0px;
   font-family: Arial;
   border: border-box;
-
 }
 
 body {
@@ -102,13 +101,13 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-column-gap: 5px;
-  justify-items: center;
+  justify-items: space-around;
   grid-row-gap: 20px;
 
   .box {
     background-color: #ffffff;
-    width: 200px;
-    padding: 20px;
+    width: 5em;
+    padding: 0.4em;
     border-radius: 10px;
     color: #000000;
     display: flex;
@@ -118,6 +117,30 @@ html {
     font-family: sans-serif;
   }
 
+}
+
+@media only screen and (max-width:500px) {
+  .container{
+    margin-left: auto;
+    padding: 0;
+    justify-content: center;
+    .box{
+      width: 3em;
+      padding: 0.1em;
+    }
+  }
+}
+@media only screen and (max-width:395px) {
+  .container{
+    margin: auto;
+    padding: 0;
+    justify-content:start;
+    overflow-x: hidden;
+    .box{
+      width: 2.5em;
+      padding: 0.1em;
+    }
+  }
 }
 
 .box:hover {
