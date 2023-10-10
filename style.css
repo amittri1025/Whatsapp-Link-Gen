@@ -3,7 +3,9 @@
 body {
   position: relative;
 }
-
+.custom-navbar{
+  display: flex;
+}
 ::-webkit-scrollbar {
   width: 15px;
   height: 12px;
@@ -21,7 +23,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #6e6f6d;
 }
-
+li>a{
+  margin: 0px 10px;
+  width: auto;
+}
+li>a:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+#toggleMode{
+  width: 40px;
+}
 .navbar-brand {
   font-family: "Dancing Script";
   font-weight: bolder;
