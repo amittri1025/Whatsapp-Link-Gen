@@ -1,12 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-
+*{
+  scroll-behavior: smooth;
+}
 body {
   position: relative;
+  
 }
 
 ::-webkit-scrollbar {
   width: 15px;
   height: 12px;
+}
+/* Adding typewritting animation for a better looking */
+#p1{
+  text-shadow: 10px 10px 10px #979494; 
+}
+ @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+@media only screen and (min-width: 0px), (max-width: 320px){
+  #txt{
+    
+    overflow: hidden;
+    display: block;
+    border-right: .15em solid orange;
+    
+    /* white-space: nowrap; */
+    margin-left: 0px;
+    font-size: 1.6rem;
+    width: 0;
+    animation:  typing1 1.5s forwards,
+    blink .8s infinite;
+}
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+}
+@media only screen and (min-width: 320px), (max-width: 1030px){
+  #txt{
+    overflow: hidden;
+    display: block;
+    border-right: .15em solid orange;
+    
+    /* white-space: nowrap; */
+    margin-left: 0px;
+    font-size: 1.6rem;
+    width: 0;
+    animation:  typing2 1.5s forwards,
+    blink .8s infinite;
+    position: relative;
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+}
+#rockbtn{
+  transition: transform 0.5s ease;
+  margin-top: 23px;
+}
+#rockBtn:hover{
+ background-color: rgb(180, 177, 177);
+ transform: scale(1.01);
 }
 
 ::-webkit-scrollbar-track {
@@ -91,14 +161,29 @@ input.input-error {
   border-image: none;
   height: 100%;
   width: 7.6rem;
+  transition: transform 0.5s ease;
 }
 #mybtn:hover {
   color: #fff;
-  background-color: #146a42;
+  background-color: #046839;
   border-color: #146a42;
+  transform: scale(1.1);
 }
-
-
+#btn-copy{
+  transition: transform 0.5s ease;
+}
+#btn-copy:hover{
+  transform: scale(1.1);
+}
+#cnt,#abt{
+  transition: transform 0.5s ease;
+}
+#cnt:hover{
+  transform: scale(1.1);
+}
+#abt:hover{
+  transform: scale(1.1);
+}
 /* Link */
 
 #genLink {
