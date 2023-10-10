@@ -2,7 +2,6 @@
   margin: 0px;
   font-family: Arial;
   border: border-box;
-
 }
 
 body {
@@ -15,8 +14,10 @@ body {
 .navbar {
   width: 100%;
   background-color: #212529;
-
 }
+
+
+
 .navbar-brand {
   font-family: "Dancing Script";
   font-weight: bolder;
@@ -41,7 +42,6 @@ a {
   text-decoration: none;
   font-size: 15px;
 }
-
 
 .hero {
   color: white;
@@ -73,17 +73,15 @@ a {
   width: 45%;
 }
 
-
 footer {
   padding: 10px;
   margin-top: auto;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 * {
   margin: 0;
@@ -119,7 +117,6 @@ html {
     font-family: sans-serif;
   
   }
-
 }
 
 .box:hover {
@@ -138,31 +135,10 @@ html {
 
 i {
   padding: 0px;
+
 }
 
-.box:hover i{
-  transform: scale(1.2);
-}
 
-#insta:hover{
-  background-color: #d62976;
-  color: white;
-}
-
-#twit:hover{
-  background-color: black;
-  color:white;
-}
-
-#linked:hover{
-  background-color: #0072b1;
-  color:white;
-}
-
-#git:hover{
-  background-color: black;
-  color:white;
-}
 .box {
   display: flex;
   flex-direction: column;
@@ -170,51 +146,4 @@ i {
 
 .box p {
   font-size: 20px;
-}
-
-@media screen and (max-width:1250px){
-  .hero-img {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin:2rem 0;
-  }
-
-  .container {
-    width:100%;
-    display: flex;
-    /* padding :0 0px; */
-    flex-direction: row;
-    /* gap: 1px; */
-    /* //align-items: center; */
-    justify-content: center;
-    /* background-color: red; */
-    gap: 10px;
-  
-    .box {
-      background-color: #ffffff;
-      width: 210px;
-      height: 210px;
-      padding: 10px;
-      border-radius: 2px;
-      color: #000000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      font-family: sans-serif;
-    
-    }
-}
-#box1 , #box2 {
-  border-bottom: none;
-}
-#box2{
-  border-right:none;
-}
-#box4{
-  border-left: none;
-}
 }

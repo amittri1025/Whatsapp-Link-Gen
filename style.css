@@ -51,6 +51,7 @@ input.input-error {
 .mob-container {
   display: flex;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
 .mob-code {
@@ -97,7 +98,6 @@ input.input-error {
   background-color: #146a42;
   border-color: #146a42;
 }
-
 
 /* Link */
 
@@ -163,4 +163,7 @@ body.dark-mode {
   background-color: #333;
   color: #fff;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 22436a25ec28598a60d867ae97a760606299be97
