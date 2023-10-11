@@ -16,8 +16,6 @@ body {
   background-color: #212529;
 }
 
-
-
 .navbar-brand {
   font-family: "Dancing Script";
   font-weight: bolder;
@@ -135,9 +133,7 @@ html {
 
 i {
   padding: 0px;
-
 }
-
 
 .box {
   display: flex;
@@ -146,4 +142,8 @@ i {
 
 .box p {
   font-size: 20px;
+}
+
+.white-space {
+  white-space: nowrap;
 }
