@@ -125,8 +125,10 @@ html {
     padding: 0;
     justify-content: center;
     .box{
-      width: 3em;
+      width: 4em;
       padding: 0.1em;
+      justify-content: space-around;
+      flex-direction: row;
     }
   }
 }
@@ -137,8 +139,26 @@ html {
     justify-content:start;
     overflow-x: hidden;
     .box{
-      width: 2.5em;
+      font-size: 2em;
+      width: 4em;
       padding: 0.1em;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    .box p{
+      font-size: .6em;
+    }
+  }
+}
+
+@media screen and (max-width:350px) {
+  .container{
+    .box{
+      font-size: 1.3em;
+      width: 5em;
+    }
+    .box p{
+      font-size: .7em;
     }
   }
 }
