@@ -2,6 +2,7 @@
 
 body {
   position: relative;
+  --btn-shadow: #008b41;
 }
 
 ::-webkit-scrollbar {
@@ -162,4 +163,12 @@ body.light-mode {
 body.dark-mode {
   background-color: #333;
   color: #fff;
+  --btn-shadow: #03c75e;
+}
+
+.shadow-hover {
+  transition: box-shadow 300ms;
+}
+.shadow-hover:hover {
+  box-shadow: 0 10px 20px -10px var(--btn-shadow) !important;
 }
