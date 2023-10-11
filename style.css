@@ -2,6 +2,7 @@
 
 body {
   position: relative;
+  --btn-shadow: #008b41;
 }
 
 ::-webkit-scrollbar {
@@ -79,6 +80,7 @@ input.input-error {
 .mob-container {
   display: flex;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
 .mob-code {
@@ -118,14 +120,12 @@ input.input-error {
   margin: 0;
   border-image: none;
   height: 100%;
-  width: 7.6rem;
 }
 #mybtn:hover {
   color: rgba(33, 43, 41, 0.667);
   background-color: #146a42;
   border-color: #146a42;
 }
-
 
 /* Link */
 
@@ -190,4 +190,12 @@ body.light-mode {
 body.dark-mode {
   background-color: #333;
   color: #fff;
+  --btn-shadow: #03c75e;
+}
+
+.shadow-hover {
+  transition: box-shadow 300ms;
+}
+.shadow-hover:hover {
+  box-shadow: 0 10px 20px -10px var(--btn-shadow) !important;
 }
