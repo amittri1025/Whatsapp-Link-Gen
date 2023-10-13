@@ -1,14 +1,17 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 function HomeFooter() {
+  let navigate = useNavigate();
+
   return (
     <div class="footer text-center bg-dark text-white p-5 pb-2">
 
     <p class="fw-normal">Visit Our Website Regularly for best Web Apps</p>
     <div class="d-flex align-items-center justify-content-center">
-      <a href="#" class="btn btn-light mx-2 shadow-hover">About Us</a>
+      <a href="/" class="btn btn-light mx-2 shadow-hover">About Us</a>
       {/* TODO: fix interlinking */}
-      <a href="./contact.html" class="btn btn-light mx-2 shadow-hover">Contact Us</a>
+      <a href="/contact" class="btn btn-light mx-2 shadow-hover">Contact Us</a>
     </div>
 
     <div class="p-4">

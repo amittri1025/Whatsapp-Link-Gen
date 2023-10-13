@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+// import emojiFunc from '../assets/vanillaEmojiPicker';
 
 function MainBody() {
   return (
@@ -247,7 +248,10 @@ function MainBody() {
               <label for="textforWa" class="form-label">Text to Send</label>
               <input required type="text" class="one form-control" id="textforWa"/>
             </div>
-            <button type="button" class="emoji-btn btn btn-primary align-self-end ms-1" style={{"height" : "46px", "font-size" : "18px"}}>😊</button>
+            <button type="button" class="emoji-btn btn btn-primary align-self-end ms-1" style={{"height" : "46px", "font-size" : "18px"}} 
+            // onClick={emojiFunc}
+            //TODO: fix the emoji picker
+            >😊</button>
           </div>
           <button type="submit" class="btn btn-success white-space shadow-hover" id="mybtn">Generate Link</button>
         </form>
