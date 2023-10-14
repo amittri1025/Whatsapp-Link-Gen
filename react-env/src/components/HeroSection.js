@@ -2,7 +2,7 @@ import React from 'react'
 import phoneSVG from '../images/phone.svg'
 function HeroSection() {
   return (
-    <section class="bg-success hero text-light p-5 text-center text-sm-start d-flex justify-content-center">
+    <section class="bg-success hero-section text-light p-5 text-center text-sm-start d-flex justify-content-center">
     <div class="container w-75 offset-* position-relative">
       <div class="d-flex align-items-center justify-content-between ">
         <div>
