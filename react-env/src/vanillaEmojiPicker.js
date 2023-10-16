@@ -1,4 +1,4 @@
-const EmojiPicker = function(options) {
+export function EmojiPicker (options) {
 
     this.options = options;
     this.trigger = this.options.trigger.map(item => item.selector);

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import MainBody from '../components/MainBody';
@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 import '../App.css';
 
 function Home() {
+    // dark mode
+    const [ dark, changeDarker ] = useState('light');
 
     useEffect(() => {
         const b2t = document.getElementById('back-to-top');
@@ -29,15 +31,13 @@ function Home() {
 
   return (
     <div className="App">
-    <Navbar/>
+    <Navbar dark={dark} changeDarker={changeDarker}/>
     <HeroSection/>
-    <MainBody/>
+    <MainBody dark={dark}/>
     {/* Added Button to go to top of page  */}
      <div id="back-to-top">
        <i className="fa-solid fa-chevron-up"></i>
      </div>
-
-   
    <HomeFooter/>
    <CopyrightFooter/>
  </div>

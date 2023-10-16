@@ -1,8 +1,6 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
 
 function HomeFooter() {
-  let navigate = useNavigate();
 
   return (
     <div class="footer text-center bg-dark text-white p-5 pb-2">

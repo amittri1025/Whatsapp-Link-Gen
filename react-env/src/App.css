@@ -153,13 +153,13 @@ input.input-error {
 }
 
 /* Default (Light) Mode */
-body.light-mode {
+.light-mode {
   background-color: #fff;
   color: #333;
 }
 
 /* Dark Mode */
-body.dark-mode {
+.dark-mode {
   background-color: #333;
   color: #fff;
   --btn-shadow: #03c75e;

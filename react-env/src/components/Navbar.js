@@ -1,6 +1,9 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar(props) {
+    const changeDarkMode = () => {
+        props.dark === 'dark' ? props.changeDarker('light') : props.changeDarker('dark');
+    } 
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -26,8 +29,8 @@ function Navbar() {
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sign-up</a>
                 </li> --> */}
-                <button id="toggleMode" class="btn btn-outline-success col-1 col-lg-5 d-flex justify-content-center align-items-center rounded-circle">
-                  <i class="fa-regular fa-sun"></i>
+                <button class="btn btn-outline-success col-1 col-lg-5 d-flex justify-content-center align-items-center rounded-circle" onClick={changeDarkMode}>
+                  {(props.dark === "dark")? <i class="fa-regular fa-sun"></i>: <i class="fa-solid fa-moon"></i>}
                 </button>
             </ul>
         </div>

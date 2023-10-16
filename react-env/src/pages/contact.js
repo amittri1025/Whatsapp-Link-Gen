@@ -2,7 +2,6 @@ import React from 'react'
 import '../contact.css';
 import ContactNavbar from '../components/ContactNavbar';
 import ContactHero from '../components/ContactHero';
-import CopyrightFooter from '../components/CopyrightFooter';
 import ContactFooter from '../components/ContactFooter';
 
 function contact() {

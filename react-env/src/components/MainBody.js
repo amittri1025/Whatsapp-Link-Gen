@@ -1,9 +1,96 @@
-import React from 'react';
-// import emojiFunc from '../assets/vanillaEmojiPicker';
+import React, { useEffect } from 'react';
+import ClipboardJS from 'clipboard';
 
-function MainBody() {
+function MainBody(props) {
+  useEffect(() => { 
+const btn = document.getElementById("mybtn");
+// const rockBtn = document.getElementById("rockBtn");
+const mob = document.getElementById("MobileNum");
+const inputText = document.getElementById("textforWa");
+const genLink = document.getElementById("genLink");
+const btnCopy = document.getElementById("btn-copy");
+const whatsBtn = document.getElementById("btn-WhatsLink");
+const errMsg = document.querySelector(".err-msg");
+
+const countryCode = document.querySelector("select");
+
+const select = document.getElementById("select");
+
+function adjustWidth() {
+  const selectedOption = select.options[select.selectedIndex];
+  select.style.width = `${selectedOption.text.length + 3}ch`;
+}
+adjustWidth();
+select.addEventListener("change", adjustWidth);
+
+let arrayOfStrings = inputText.value.split(" ");
+let linkText = arrayOfStrings.join("%20");
+let linkform = `I dont care`;
+
+mob.addEventListener("input", (e) => {
+  mob.classList.remove("input-error");
+  errMsg.style.display = "none";
+
+  const value = e.target.value;
+
+  if (e.inputType === "deleteContentBackward") return;
+
+  // can input only digits
+
+  if (parseInt(e.data) !== 0 && !parseInt(e.data)) {
+    console.log(e.data);
+    mob.value = value.substring(0, value.length - 1);
+  }
+});
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  // if mobilenum is empty then don't submit
+  if (!mob.value) {
+    mob.classList.add("input-error");
+    errMsg.style.display = "block";
+    return;
+  }
+
+  arrayOfStrings = inputText.value.split(" ");
+  linkText = arrayOfStrings.join("%20");
+  linkform = `https://api.whatsapp.com/send?phone=${countryCode.value}${mob.value}&text=${linkText}&lang=en`;
+
+  const whatsShareLink = `api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`;
+
+  console.log(inputText.value);
+  genLink.innerText = linkform;
+
+  whatsBtn.setAttribute("href", `http://${whatsShareLink}/`);
+  whatsBtn.classList.remove("wbtn");
+
+  window.scrollTo(0, 700);
+});
+
+
+new ClipboardJS("#btn-copy");
+btnCopy.addEventListener("click", (e) => {
+  e.preventDefault();
+  btnCopy.innerText = "Copied";
+  setTimeout(() => {
+    btnCopy.innerText = "Copy";
+  }, 2000);
+});
+
+// new EmojiPicker({
+//   trigger: [
+//     {
+//       selector: ".emoji-btn",
+//       insertInto: [".one"],
+//     },
+//   ],
+//   closeButton: true,
+//   //specialButtons: green
+// });
+  },[])
   return (
-    <section class="p-sm-5 py-5">
+    <section className={`p-sm-5 py-5 ${props.dark === 'dark' ? 'dark-mode' : 'light-mode'}`}>
     <div class="container w-75">
       <div class="d-sm-flex justify-content-between align-items-center">
         <form class="needs-validation">
@@ -270,9 +357,9 @@ function MainBody() {
       <div class="text-center" id="linkContainer">
         <h4 id="genLink">Link will be Generated here !!</h4>
 
-        <button href="#" class="btn btn-dark shadow-hover" id="btn-copy" data-clipboard-target="#genLink">Copy</button>
+        <button href="/" class="btn my-2 mx-1 btn-dark shadow-hover" id="btn-copy" data-clipboard-target="#genLink">Copy</button>
 
-        <a class="btn btn-success my-2 wbtn shadow-hover" id="btn-WhatsLink"><i class="bi bi-whatsapp"></i> Open in Whatsapp</a>
+        <a class="btn btn-success my-2  wbtn shadow-hover" id="btn-WhatsLink"><i class="bi bi-whatsapp"></i> Open in Whatsapp</a>
       </div>
     </div>
 

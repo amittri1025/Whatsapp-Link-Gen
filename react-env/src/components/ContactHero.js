@@ -6,7 +6,7 @@ const ContactHero = () => {
     <div class="hero">
     <div class="hero-text"><p>Contact Us</p></div>
     <div class="hero-img">
-        <img src={phoneSVG}/>
+        <img src={phoneSVG} alt="img_here"/>
         <div class="contact-container">
             <a href="https://www.instagram.com/amittripathei/"  style={{"text-decoration" : "none"}}><div class="box"><i class="fa-brands fa-instagram" ></i><p>Instagram</p></div></a>
             <a href="https://twitter.com/tdevamit" style={{"text-decoration" : "none"}}><div class="box"><i class="fa-brands fa-x-twitter" ></i><p>X</p></div></a>
