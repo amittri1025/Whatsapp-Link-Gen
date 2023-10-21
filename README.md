@@ -9,9 +9,8 @@
 </div>
 <!-- WaLinkGen  -->
 
-
 <div align="center">
-    <img src="https://i.imgur.com/irp03OP.png" alt="logo_here" width="500px">
+    <img src="https://github.com/amittri1025/Whatsapp-Link-Gen/assets/74503582/b1e51b65-6cd9-4feb-a8b3-9324c8a357aa" />
     <p>Welcome to <b>Whatsapp Link Gen</b> ! 🎉 A Web App to directly message People without ever saving their phone number.
     </p>
     <p>
