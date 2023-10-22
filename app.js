@@ -99,7 +99,7 @@ btn.addEventListener("click", (e) => {
   linkText = arrayOfStrings.join("%20");
   linkform = `https://api.whatsapp.com/send?phone=${countryCode.value}${mob.value}&text=${linkText}&lang=en`;
 
-  const whatsShareLink = `api.whatsapp.com/send?phone=91${mob.value}&text=${linkText}&lang=en`;
+  const whatsShareLink = `api.whatsapp.com/send?phone=${countryCode.value}${mob.value}&text=${linkText}&lang=en`;
 
   console.log(inputText.value);
   genLink.innerText = linkform;
