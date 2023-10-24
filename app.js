@@ -7,20 +7,44 @@ const btnCopy = document.getElementById("btn-copy");
 const whatsBtn = document.getElementById("btn-WhatsLink");
 const linkContainer = document.getElementById("linkContainer");
 const errMsg = document.querySelector(".err-msg");
-
+const footer=document.querySelector(".footer");
+const contactvisit=document.querySelector('[data-black]');
+const hometext=document.querySelector('[data-hometext]');
 const countryCode = document.querySelector("select");
+const hamburger=document.querySelector('.hamburger');
 
 // dark mode
 const toggleButton = document.getElementById("toggleMode");
 const body = document.body;
 let colorMode = localStorage.getItem("color-mode") || "light";
-
+// console.log("1",colorMode)
 toggleButton.innerHTML =
   colorMode === "dark"
     ? '<i class="fa-regular fa-sun"></i>'
     : '<i class="fa-solid fa-moon"></i>';
 
 body.classList.toggle("dark-mode", colorMode == "dark");
+function AtReloadcheck(){
+  if(body.classList.contains("dark-mode")){
+    footer.classList.add('bg-dark');
+    contactvisit.classList.remove("blacktext");
+    // hometext.classList.add('homewhite')
+    hometext.classList.remove("blacktext");
+    hamburger.classList.remove('backcolor');
+    
+  }
+     
+   else{
+    footer.classList.remove('bg-dark');
+    contactvisit.classList.add("blacktext");
+    // hometext.classList.remove("homewhite");
+    hometext.classList.add("blacktext");
+    hamburger.classList.add("backcolor");
+
+
+   } 
+}
+AtReloadcheck();
 
 function toggleColorMode() {
   colorMode = colorMode === "light" ? "dark" : "light";
@@ -31,7 +55,7 @@ function toggleColorMode() {
       : '<i class="fa-solid fa-moon"></i>';
 
   body.classList.toggle("dark-mode", colorMode == "dark");
-
+  AtReloadcheck();
   localStorage.setItem("color-mode", colorMode);
 }
 
