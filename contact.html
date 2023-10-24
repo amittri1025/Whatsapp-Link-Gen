@@ -25,10 +25,12 @@
     <link rel="stylesheet" href="./contact.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" data-navbar>
       <div class="container">
         <a class="navbar-brand" href="/"><img height="60"src="./images/WhiSave-removebg-preview.png"></a>
-        <button
+      
+          <div class="hamburger">
+            <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -39,11 +41,17 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+          </div>
+        </div>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="/" data-hometext>Home</a>
             </li>
+            <button id="toggleMode" class="btn btn-outline-success col-1 col-lg-5 d-flex justify-content-center align-items-center rounded-circle" data-btn>
+              <i class="fa-regular fa-sun"></i>
+            </button>
 
             <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -73,26 +81,26 @@
         <img src="./images/phone.svg" class="contact-img" />
         <div class="container">
           <a href="https://www.instagram.com/amittripathei/"
-            ><div class="box">
+            ><div class="box" data-box1>
               <i class="fa-brands fa-instagram"></i>
               <p>Instagram</p>
             </div></a
           >
           <a href="https://twitter.com/tdevamit"
-            ><div class="box">
+            ><div class="box" data-box2>
               <i class="fa-brands fa-x-twitter"></i>
               <p>X</p>
             </div></a
           >
           <a
             href="https://www.linkedin.com/in/tripathiamit10?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADOl_2cBjOZt0qdCM0IUScKMkDhe6YvE3dA&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B0k1XnEhTSByGMcgfky%2FPZA%3D%3D"
-            ><div class="box">
+            ><div class="box" data-box3>
               <i class="fa-brands fa-linkedin-in"></i>
               <p>LinkedIn</p>
             </div></a
           >
           <a href="https://github.com/amittri1025"
-            ><div class="box">
+            ><div class="box" data-box4>
               <i class="fa-brands fa-github"></i>
               <p>GitHub</p>
             </div></a
@@ -101,7 +109,8 @@
       </div>
     </div>
 
-    <footer>Copyright &#169 2023 WhiSave &#174</footer>
+    <footer data-footer>Copyright &#169 2023 WhiSave &#174</footer>
+    <script src="./contact.js"></script>
   </body>
   <script src="vanillaEmojiPicker.js"></script>
   <script src="./scripts/clipboard.min.js"></script>
@@ -110,4 +119,5 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"
   ></script>
+  
 </html>

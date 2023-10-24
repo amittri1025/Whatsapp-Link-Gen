@@ -8,12 +8,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: linear-gradient(to right top, #008793, #00bf72);
+  /* background-image: linear-gradient(to right top, #008793, #00bf72); */
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
 }
+
+
 
 .navbar {
   width: 100%;
-  background-color: #212529;
+  /* background-color: #212529; */
 }
 
 .navbar-brand {
@@ -24,7 +27,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 110px;
+  /* margin-left: 110px; */
 }
 
 .nav-options {
@@ -139,4 +142,21 @@ i {
 
 .white-space {
   white-space: nowrap;
+}
+
+
+.blacktext{
+  color: black !important;
+}
+/* .homewhite{
+  color: white !important;
+} */
+.whitecolor{
+  background-color: white !important;
+}
+.backcolor{
+  background-color: black !important;
+}
+.textwhite{
+  color: white !important;
 }

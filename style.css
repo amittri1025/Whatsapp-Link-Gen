@@ -3,6 +3,7 @@
 body {
   position: relative;
   --btn-shadow: #008b41;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -271,4 +272,11 @@ body.dark-mode {
   box-shadow: -15px -15px 50px rgba(0, 0, 0, .3);
   transform-origin: left bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
+}
+
+.blacktext{
+  color: black !important;
+}
+.backcolor{
+  background-color: black !important;
 }
