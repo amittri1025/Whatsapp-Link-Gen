@@ -171,3 +171,104 @@ body.dark-mode {
 .shadow-hover:hover {
   box-shadow: 0 10px 20px -10px var(--btn-shadow) !important;
 }
+.cenDiv
+{
+    margin: auto;
+    width: 80%;
+    align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.box-contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png) 50% 50% / cover no-repeat;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+  transition: .5s ease;
+  border-radius: 70px;
+}
+.hover-point {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+.hover-point:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.hover-point:nth-child(2) {
+  top: 0;
+  left: calc(100% / 3);
+}
+.hover-point:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+.hover-point:nth-child(4) {
+  top: calc(100% / 3);
+  left: 0;
+}
+.hover-point:nth-child(5) {
+  top: calc(100% / 3);
+  right: 0;
+}
+.hover-point:nth-child(6) {
+  bottom: 0;
+  left: 0;
+}
+.hover-point:nth-child(7) {
+  bottom: 0;
+  left: calc(100% / 3);
+}
+.hover-point:nth-child(8) {
+  bottom: 0;
+  right: 0;
+}
+.hover-point:nth-child(1):hover ~ .box-contents {
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, .3);
+  transform-origin: right top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotateZ(2deg);
+}
+.hover-point:nth-child(2):hover ~ .box-contents {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
+  transform-origin: center top;
+  transform: perspective(1000px) rotateX(10deg);
+}
+.hover-point:nth-child(3):hover ~ .box-contents {
+  box-shadow: -15px 15px 50px rgba(0, 0, 0, .3);
+  transform-origin: left top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg);
+}
+.hover-point:nth-child(4):hover ~ .box-contents {
+  box-shadow: 15px 5px 50px rgba(0, 0, 0, .3);
+  transform-origin: left center;
+  transform: perspective(1000px) rotateY(-10deg);
+}
+.hover-point:nth-child(5):hover ~ .box-contents {
+  box-shadow: -15px 5px 50px rgba(0, 0, 0, .3);
+  transform-origin: right center;
+  transform: perspective(1000px) rotateY(10deg);
+}
+.hover-point:nth-child(6):hover ~ .box-contents {
+  box-shadow: 15px -15px 50px rgba(0, 0, 0, .3);
+  transform-origin: right bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(-2deg);
+}
+.hover-point:nth-child(7):hover ~ .box-contents {
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, .3);
+  transform-origin: center bottom;
+  transform: perspective(1000px) rotateX(-10deg);
+}
+.hover-point:nth-child(8):hover ~ .box-contents {
+  box-shadow: -15px -15px 50px rgba(0, 0, 0, .3);
+  transform-origin: left bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
+}
