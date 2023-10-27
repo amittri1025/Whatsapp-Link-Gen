@@ -36,6 +36,34 @@ body {
 section.hero {
   background-image: linear-gradient(to right top, #008793, #00bf72);
   overflow: hidden;
+  padding: 30px 10px;
+}
+
+@media screen and (min-width: 990px) {
+  
+  .top-box {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .box-container {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.title-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+
+.title-container img {
+  height: 40px;
+  margin-bottom: 5px;
 }
 
 input.input-error {
@@ -61,6 +89,10 @@ input.input-error {
 
 .mob-num {
   display: flex;
+}
+
+#emailHelp {
+  margin-bottom: 20px;
 }
 
 .hero-image {
@@ -101,10 +133,19 @@ input.input-error {
 
 /* Link */
 
+#linkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
 #genLink {
   border: 3px solid greenyellow;
   padding: 10px;
   border-radius: 5px;
+  width: 70%;
   word-wrap: break-word;
 }
 
@@ -272,3 +313,4 @@ body.dark-mode {
   transform-origin: left bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
 }
+
