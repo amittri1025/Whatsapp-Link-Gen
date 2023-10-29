@@ -36,6 +36,34 @@ body {
 section.hero {
   background-image: linear-gradient(to right top, #008793, #00bf72);
   overflow: hidden;
+  padding: 30px 10px;
+}
+
+@media screen and (min-width: 990px) {
+  
+  .top-box {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .box-container {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.title-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+
+.title-container img {
+  height: 40px;
+  margin-bottom: 5px;
 }
 
 input.input-error {
@@ -61,6 +89,10 @@ input.input-error {
 
 .mob-num {
   display: flex;
+}
+
+#emailHelp {
+  margin-bottom: 20px;
 }
 
 .hero-image {
@@ -101,10 +133,19 @@ input.input-error {
 
 /* Link */
 
+#linkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
 #genLink {
   border: 3px solid greenyellow;
   padding: 10px;
   border-radius: 5px;
+  width: 70%;
   word-wrap: break-word;
 }
 
@@ -183,13 +224,53 @@ body.dark-mode {
   width: 300px;
   height: 300px;
 }
+
+@media screen and (max-width: 1000px){
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .box-contents {
+    border-radius: 40px;
+  }
+
+  .cenDiv {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 578px){
+  .box {
+    margin-left: 100px;
+    height: 100px;
+    width: 100px;
+    margin: 50px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 578px) {
+  .box {
+    margin-left: 50px;
+  }
+}
+
 .box-contents {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png) 50% 50% / cover no-repeat;
+  width: 100%;
+  height: 100%;
+  /* background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png) 50% 50% / cover no-repeat; */
   box-shadow: 0 0 50px rgba(0, 0, 0, .3);
   transition: .5s ease;
   border-radius: 70px;
@@ -272,3 +353,4 @@ body.dark-mode {
   transform-origin: left bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
 }
+

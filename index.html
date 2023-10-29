@@ -58,10 +58,10 @@
 </nav>
 
   <!-- Hero -->
-  <section class="bg-success hero text-light p-5 text-center text-sm-start d-flex justify-content-center">
-    <div class="container w-75 offset-* position-relative">
-      <div class="d-flex align-items-center justify-content-between ">
-        <div>
+  <section class="bg-success hero text-light text-center text-sm-start d-flex justify-content-center">
+    <div class="container offset-* position-relative">
+      <div class="box-container d-flex align-items-center">
+        <div class="top-box">
           <h1 class="fw-normal">Create <span class="text-warning "></br>Whatsapp Links</span></h1>
           <p class="lead my-4 fw-normal">Best Website to create Whatsapp Links</p>
           <p class="lead my-4 fw-normal">Skip the hassle of saving the number <br> Message directly through our website.
@@ -69,7 +69,7 @@
           <button class="shadow-hover btn btn-light btn-lg " id="rockBtn">Let's Rock</button>
         </div>
         <img class="img-fluid hero-image d-none d-lg-block pt-3 position-absolute end-0 top-0 w-50"
-          src="images/phone.svg" alt="">
+          src="images/chats.png" alt="">
       </div>
     </div>
   </section>
@@ -77,10 +77,13 @@
   <!-- Main body starts -->
   <section class="p-sm-5 py-5">
     <div class = "cenDiv">
-    <div class="container w-75">
+    <div class="container w-90">
       <div class="d-sm-flex justify-content-between align-items-center">
         <form class="needs-validation">
-          <h2 class="pb-2">Enter Details 🚀</h2>
+          <div class="title-container">
+            <h2>Enter Details</h2>
+            <!-- <img src="images/whatsapp-icon.png" /> -->
+          </div>
 
           <label for="MobileNum" class="form-label">Enter Mobile Number</label>
           <div class="mb-3 mob-container">
@@ -314,13 +317,11 @@
           <div id="emailHelp" class="form-text">
             Don't worry we never store anyone's mobile number
           </div>
-          
-          
-
-          <div class="d-flex mb-3">
+        
+          <div class="d-flex mb-3 sendText">
             <div>
               <label for="textforWa" class="form-label">Text to Send</label>
-              <input required type="text" class="one form-control" id="textforWa">
+              <textarea required type="text" class="one form-control" id="textforWa"></textarea>
             </div>
             <button type="button" class="emoji-btn btn btn-primary align-self-end ms-1" style="height: 46px; font-size: 18px;">😊</button>
           </div>
@@ -336,20 +337,20 @@
           <div class="hover-point"></div>
           <div class="hover-point"></div>
           <div class="hover-point"></div>
-          <div class="box-contents"></div>
-        </div>
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png" class="box-contents" alt="">
+        </div>  
         <!-- <div class="position-relative">
-          <img src="./whatsraj.png" alt="" class="img-fluid w-75 d-none d-md-block">
+          <img src="./whatsraj.png" alt="" class="img-fluid w-75 d-none d-md-block"> 
 
          <h3 class="magic-num position-absolute top-0" id="magic-num">Mobile Number</h3>
-          <h4 class="magic-text position-absolute bottom-0" id="magic-text">Text To Send</h4>
+          <h4 class="magic-text position-absolute bottom-0" id="magic-text">Text To Send</h4> 
         </div> -->
       </div>
       
     </div>
     </div>
 
-    <div class="container w-75 pt-5">
+    <div class="container w-90 pt-5">
       <div class="d-sm-flex"></div>
 
       <div class="text-center" id="linkContainer">
